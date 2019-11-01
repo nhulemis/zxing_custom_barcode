@@ -144,7 +144,8 @@ public class ViewfinderView extends View {
         int width = canvas.getWidth();
         int height = canvas.getHeight();
 
-        Rect frame = new Rect((int) width / 4 , height / 7 ,(int) width * 3 / 4  ,(int) height * 3 / 4);//framingRect;
+        Rect frame = new Rect((int) width / 4 , height / 7 ,
+                (int) width * 3 / 4  ,(int) height * 3 / 4);//framingRect;
         Rect previewFrame = previewFramingRect;
 
         

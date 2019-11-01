@@ -44,7 +44,7 @@ public class CaptureActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (Build.VERSION.SDK_INT < 24){ // 24 is a android version (Build.VERSION_CODES.N)
+        if (Build.VERSION.SDK_INT < 24 && IntentIntegrator.BLOCK_API){ // 24 is a android version (Build.VERSION_CODES.N)
             Toast.makeText(this,"you need to upgrade your phone to Android version 7 or higher, for use this future. thanks!",Toast.LENGTH_LONG).show();
             finish();
         }
